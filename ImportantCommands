@@ -1,9 +1,17 @@
+//format name node
 hadoop namenode -format
 
+//put(copy) file stored on local file system to /grouping file on hadoop
 hadoop dfs -put C:\Users\shivkumar\IdeaProjects\Bigdata\target\classes\grouping /grouping
+
+//to show content of file
 hadoop dfs -cat /grouping
+
+//to remove empty directory
 hadoop dfs -rmdir /grouping
+
+//to remove file
 hadoop dfs -rm /grouping
 
-
+//execute main class in jar
 hadoop jar C:\Users\shivkumar\IdeaProjects\Bigdata\target\Wordcount.jar /grouping /groupingoutput
