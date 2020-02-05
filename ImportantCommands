@@ -1,0 +1,9 @@
+hadoop namenode -format
+
+hadoop dfs -put C:\Users\shivkumar\IdeaProjects\Bigdata\target\classes\grouping /grouping
+hadoop dfs -cat /grouping
+hadoop dfs -rmdir /grouping
+hadoop dfs -rm /grouping
+
+
+hadoop jar C:\Users\shivkumar\IdeaProjects\Bigdata\target\Wordcount.jar /grouping /groupingoutput
